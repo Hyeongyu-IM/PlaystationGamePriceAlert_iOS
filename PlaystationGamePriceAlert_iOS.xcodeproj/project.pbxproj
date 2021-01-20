@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31773B1341510F5C7E62A33E /* Pods_PlaystationGamePriceAlert_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */; };
 		E0DF08E425B7F5820049A65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E325B7F5820049A65F /* AppDelegate.swift */; };
 		E0DF08E625B7F5820049A65F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E525B7F5820049A65F /* SceneDelegate.swift */; };
 		E0DF08E825B7F5820049A65F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E725B7F5820049A65F /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		781A0C9314ECE690BDA2FBBD /* Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; path = "Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaystationGamePriceAlert_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF08E025B7F5820049A65F /* PlaystationGamePriceAlert_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaystationGamePriceAlert_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF08E325B7F5820049A65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DF08E525B7F5820049A65F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		E0DF08EC25B7F5830049A65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DF08EF25B7F5830049A65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0DF08F125B7F5830049A65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC40F7A1F60ACC8FA96A98B /* Pods-PlaystationGamePriceAlert_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaystationGamePriceAlert_iOS.release.xcconfig"; path = "Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31773B1341510F5C7E62A33E /* Pods_PlaystationGamePriceAlert_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEC7FF48BE45FE6B0FB996BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6FE1218A7AEC241E673062D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				781A0C9314ECE690BDA2FBBD /* Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig */,
+				ECC40F7A1F60ACC8FA96A98B /* Pods-PlaystationGamePriceAlert_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E0DF08D725B7F5820049A65F = {
 			isa = PBXGroup;
 			children = (
 				E0DF08E225B7F5820049A65F /* PlaystationGamePriceAlert_iOS */,
 				E0DF08E125B7F5820049A65F /* Products */,
+				C6FE1218A7AEC241E673062D /* Pods */,
+				AEC7FF48BE45FE6B0FB996BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0DF08F425B7F5830049A65F /* Build configuration list for PBXNativeTarget "PlaystationGamePriceAlert_iOS" */;
 			buildPhases = (
+				CA27435663853967D1E9F916 /* [CP] Check Pods Manifest.lock */,
 				E0DF08DC25B7F5820049A65F /* Sources */,
 				E0DF08DD25B7F5820049A65F /* Frameworks */,
 				E0DF08DE25B7F5820049A65F /* Resources */,
+				0DEDB06558B0DC5AE148FB12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DEDB06558B0DC5AE148FB12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA27435663853967D1E9F916 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaystationGamePriceAlert_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0DF08DC25B7F5820049A65F /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		E0DF08F525B7F5830049A65F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781A0C9314ECE690BDA2FBBD /* Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		E0DF08F625B7F5830049A65F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC40F7A1F60ACC8FA96A98B /* Pods-PlaystationGamePriceAlert_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
