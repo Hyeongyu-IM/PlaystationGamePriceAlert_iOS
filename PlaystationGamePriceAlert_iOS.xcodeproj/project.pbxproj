@@ -3,30 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		31773B1341510F5C7E62A33E /* Pods_PlaystationGamePriceAlert_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */; };
+		E088521025BECD2800783CDA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088520F25BECD2800783CDA /* GameModel.swift */; };
 		E0DF08E425B7F5820049A65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E325B7F5820049A65F /* AppDelegate.swift */; };
 		E0DF08E625B7F5820049A65F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E525B7F5820049A65F /* SceneDelegate.swift */; };
-		E0DF08E825B7F5820049A65F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E725B7F5820049A65F /* ViewController.swift */; };
 		E0DF08EB25B7F5820049A65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF08E925B7F5820049A65F /* Main.storyboard */; };
 		E0DF08ED25B7F5830049A65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DF08EC25B7F5830049A65F /* Assets.xcassets */; };
 		E0DF08F025B7F5830049A65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF08EE25B7F5830049A65F /* LaunchScreen.storyboard */; };
+		E0E44B4B25BEED58004D561F /* WillReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E44B4A25BEED58004D561F /* WillReleaseViewController.swift */; };
+		E0E44B4E25BEED68004D561F /* PromotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E44B4D25BEED68004D561F /* PromotionViewController.swift */; };
+		E0E44B5125BEED74004D561F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E44B5025BEED74004D561F /* SettingViewController.swift */; };
+		E0E44B5425BEED86004D561F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E44B5325BEED86004D561F /* SearchViewController.swift */; };
+		E0E44B5725BEED95004D561F /* TrackingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E44B5625BEED95004D561F /* TrackingListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		781A0C9314ECE690BDA2FBBD /* Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; path = "Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaystationGamePriceAlert_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E088520F25BECD2800783CDA /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		E0DF08E025B7F5820049A65F /* PlaystationGamePriceAlert_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaystationGamePriceAlert_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF08E325B7F5820049A65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DF08E525B7F5820049A65F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0DF08E725B7F5820049A65F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0DF08EA25B7F5820049A65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0DF08EC25B7F5830049A65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DF08EF25B7F5830049A65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0DF08F125B7F5830049A65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E44B4A25BEED58004D561F /* WillReleaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillReleaseViewController.swift; sourceTree = "<group>"; };
+		E0E44B4D25BEED68004D561F /* PromotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewController.swift; sourceTree = "<group>"; };
+		E0E44B5025BEED74004D561F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E0E44B5325BEED86004D561F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E0E44B5625BEED95004D561F /* TrackingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListViewController.swift; sourceTree = "<group>"; };
 		ECC40F7A1F60ACC8FA96A98B /* Pods-PlaystationGamePriceAlert_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaystationGamePriceAlert_iOS.release.xcconfig"; path = "Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,8 +66,24 @@
 				781A0C9314ECE690BDA2FBBD /* Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig */,
 				ECC40F7A1F60ACC8FA96A98B /* Pods-PlaystationGamePriceAlert_iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E022075225BEC84500AA35C5 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF08E925B7F5820049A65F /* Main.storyboard */,
+				E0DF08EE25B7F5830049A65F /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		E088520E25BECCC200783CDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E088520F25BECD2800783CDA /* GameModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E0DF08D725B7F5820049A65F = {
@@ -83,13 +109,25 @@
 			children = (
 				E0DF08E325B7F5820049A65F /* AppDelegate.swift */,
 				E0DF08E525B7F5820049A65F /* SceneDelegate.swift */,
-				E0DF08E725B7F5820049A65F /* ViewController.swift */,
-				E0DF08E925B7F5820049A65F /* Main.storyboard */,
+				E022075225BEC84500AA35C5 /* StoryBoard */,
+				E0E44B4725BEEC02004D561F /* ViewController */,
+				E088520E25BECCC200783CDA /* Model */,
 				E0DF08EC25B7F5830049A65F /* Assets.xcassets */,
-				E0DF08EE25B7F5830049A65F /* LaunchScreen.storyboard */,
 				E0DF08F125B7F5830049A65F /* Info.plist */,
 			);
 			path = PlaystationGamePriceAlert_iOS;
+			sourceTree = "<group>";
+		};
+		E0E44B4725BEEC02004D561F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0E44B4A25BEED58004D561F /* WillReleaseViewController.swift */,
+				E0E44B4D25BEED68004D561F /* PromotionViewController.swift */,
+				E0E44B5025BEED74004D561F /* SettingViewController.swift */,
+				E0E44B5325BEED86004D561F /* SearchViewController.swift */,
+				E0E44B5625BEED95004D561F /* TrackingListViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0DF08E825B7F5820049A65F /* ViewController.swift in Sources */,
+				E088521025BECD2800783CDA /* GameModel.swift in Sources */,
+				E0E44B5425BEED86004D561F /* SearchViewController.swift in Sources */,
+				E0E44B5725BEED95004D561F /* TrackingListViewController.swift in Sources */,
+				E0E44B4E25BEED68004D561F /* PromotionViewController.swift in Sources */,
 				E0DF08E425B7F5820049A65F /* AppDelegate.swift in Sources */,
+				E0E44B4B25BEED58004D561F /* WillReleaseViewController.swift in Sources */,
 				E0DF08E625B7F5820049A65F /* SceneDelegate.swift in Sources */,
+				E0E44B5125BEED74004D561F /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Hyeongyu-IM.PlaystationGamePriceAlert-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,7 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Hyeongyu-IM.PlaystationGamePriceAlert-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
