@@ -9,6 +9,7 @@ import UIKit
 
 class WillReleaseViewController: UIViewController {
     
+    @IBOutlet weak var willReleaseCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

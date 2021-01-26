@@ -9,6 +9,7 @@ import UIKit
 
 class TrackingListViewController: UIViewController {
     
+    @IBOutlet weak var trackingTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

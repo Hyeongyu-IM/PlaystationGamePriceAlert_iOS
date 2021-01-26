@@ -7,8 +7,9 @@
 
 import UIKit
 
-class PromotionViewController: UIViewController {
+class SearchViewController: UIViewController {
     
+    @IBOutlet weak var searchTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

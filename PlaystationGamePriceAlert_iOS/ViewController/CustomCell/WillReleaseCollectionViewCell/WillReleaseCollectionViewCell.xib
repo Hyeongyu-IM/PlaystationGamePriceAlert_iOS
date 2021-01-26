@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WillReleaseCollectionViewCell" id="lfL-B1-7YH" customClass="WillReleaseCollectionViewCell" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="279"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="6by-dc-BkT">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2B-4f-9wN">
+                        <rect key="frame" x="0.0" y="0.0" width="210" height="203"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="210" id="VFY-pC-w6c"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assassin's Creed Odyssey - 디지털 스탠다드 에디션 (중국어, 한국어, 일본어)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mGT-Nn-R5T">
+                        <rect key="frame" x="4" y="211" width="200" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13,200원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN9-79-9N2">
+                        <rect key="frame" x="4" y="260" width="59" height="17"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mGT-Nn-R5T" firstAttribute="centerX" secondItem="e2B-4f-9wN" secondAttribute="centerX" id="4Ag-uV-5Xv"/>
+                    <constraint firstItem="aN9-79-9N2" firstAttribute="leading" secondItem="mGT-Nn-R5T" secondAttribute="leading" id="54i-nR-d6c"/>
+                    <constraint firstItem="mGT-Nn-R5T" firstAttribute="top" secondItem="e2B-4f-9wN" secondAttribute="bottom" constant="8" symbolic="YES" id="JQu-mr-MsW"/>
+                    <constraint firstItem="e2B-4f-9wN" firstAttribute="leading" secondItem="6by-dc-BkT" secondAttribute="leading" id="L1n-57-2LS"/>
+                    <constraint firstItem="aN9-79-9N2" firstAttribute="top" secondItem="mGT-Nn-R5T" secondAttribute="bottom" constant="5" id="xns-nw-unf"/>
+                    <constraint firstAttribute="trailing" secondItem="e2B-4f-9wN" secondAttribute="trailing" id="yJf-5b-f8g"/>
+                    <constraint firstItem="e2B-4f-9wN" firstAttribute="top" secondItem="6by-dc-BkT" secondAttribute="top" id="yMb-4B-uEJ"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="211" height="279"/>
+            <connections>
+                <outlet property="releaseImage" destination="e2B-4f-9wN" id="brk-AV-zyh"/>
+                <outlet property="releasePriceLabel" destination="aN9-79-9N2" id="5UL-8m-Ilv"/>
+                <outlet property="releaseTitleLabel" destination="mGT-Nn-R5T" id="Pwm-D5-ZE0"/>
+            </connections>
+            <point key="canvasLocation" x="-125.36231884057972" y="-17.745535714285712"/>
+        </collectionViewCell>
+    </objects>
+</document>

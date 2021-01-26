@@ -9,7 +9,7 @@ import UIKit
 
 class PromotionViewController: UIViewController {
     
-    
+    @IBOutlet weak var promotionColletionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }

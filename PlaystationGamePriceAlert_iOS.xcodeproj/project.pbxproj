@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		31773B1341510F5C7E62A33E /* Pods_PlaystationGamePriceAlert_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */; };
+		E068477725BFF8D000C6C704 /* TrackingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068477525BFF8D000C6C704 /* TrackingListTableViewCell.swift */; };
+		E068477825BFF8D000C6C704 /* TrackingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E068477625BFF8D000C6C704 /* TrackingListTableViewCell.xib */; };
+		E068477C25BFFD0C00C6C704 /* PromotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068477A25BFFD0C00C6C704 /* PromotionTableViewCell.swift */; };
+		E068477D25BFFD0C00C6C704 /* PromotionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E068477B25BFFD0C00C6C704 /* PromotionTableViewCell.xib */; };
+		E068478625C0030D00C6C704 /* SettingViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068478525C0030D00C6C704 /* SettingViewSectionHeader.swift */; };
+		E068478925C0032600C6C704 /* SettingViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E068478825C0032600C6C704 /* SettingViewSectionHeader.xib */; };
+		E068478D25C006C800C6C704 /* SettingViewSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068478B25C006C800C6C704 /* SettingViewSwitchCell.swift */; };
+		E068478E25C006C800C6C704 /* SettingViewSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E068478C25C006C800C6C704 /* SettingViewSwitchCell.xib */; };
+		E068479325C009E500C6C704 /* WillReleaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068479125C009E500C6C704 /* WillReleaseCollectionViewCell.swift */; };
+		E068479425C009E500C6C704 /* WillReleaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E068479225C009E500C6C704 /* WillReleaseCollectionViewCell.xib */; };
 		E088521025BECD2800783CDA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088520F25BECD2800783CDA /* GameModel.swift */; };
 		E0DF08E425B7F5820049A65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E325B7F5820049A65F /* AppDelegate.swift */; };
 		E0DF08E625B7F5820049A65F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E525B7F5820049A65F /* SceneDelegate.swift */; };
@@ -24,6 +34,16 @@
 /* Begin PBXFileReference section */
 		781A0C9314ECE690BDA2FBBD /* Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; path = "Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaystationGamePriceAlert_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E068477525BFF8D000C6C704 /* TrackingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListTableViewCell.swift; sourceTree = "<group>"; };
+		E068477625BFF8D000C6C704 /* TrackingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackingListTableViewCell.xib; sourceTree = "<group>"; };
+		E068477A25BFFD0C00C6C704 /* PromotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionTableViewCell.swift; sourceTree = "<group>"; };
+		E068477B25BFFD0C00C6C704 /* PromotionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionTableViewCell.xib; sourceTree = "<group>"; };
+		E068478525C0030D00C6C704 /* SettingViewSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewSectionHeader.swift; sourceTree = "<group>"; };
+		E068478825C0032600C6C704 /* SettingViewSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewSectionHeader.xib; sourceTree = "<group>"; };
+		E068478B25C006C800C6C704 /* SettingViewSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewSwitchCell.swift; sourceTree = "<group>"; };
+		E068478C25C006C800C6C704 /* SettingViewSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewSwitchCell.xib; sourceTree = "<group>"; };
+		E068479125C009E500C6C704 /* WillReleaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillReleaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		E068479225C009E500C6C704 /* WillReleaseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WillReleaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		E088520F25BECD2800783CDA /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		E0DF08E025B7F5820049A65F /* PlaystationGamePriceAlert_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaystationGamePriceAlert_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF08E325B7F5820049A65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +98,15 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
+		E068479025C0092500C6C704 /* PromotionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E068477A25BFFD0C00C6C704 /* PromotionTableViewCell.swift */,
+				E068477B25BFFD0C00C6C704 /* PromotionTableViewCell.xib */,
+			);
+			path = PromotionTableViewCell;
+			sourceTree = "<group>";
+		};
 		E088520E25BECCC200783CDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +155,49 @@
 				E0E44B5025BEED74004D561F /* SettingViewController.swift */,
 				E0E44B5325BEED86004D561F /* SearchViewController.swift */,
 				E0E44B5625BEED95004D561F /* TrackingListViewController.swift */,
+				E0E44B5925BFF6E5004D561F /* CustomCell */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E0E44B5925BFF6E5004D561F /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				E068479025C0092500C6C704 /* PromotionTableViewCell */,
+				E0E44B5D25BFF752004D561F /* SettingTableViewCell */,
+				E0E44B5C25BFF73A004D561F /* WillReleaseCollectionViewCell */,
+				E0E44B5B25BFF723004D561F /* TrackingListTableViewCell */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		E0E44B5B25BFF723004D561F /* TrackingListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E068477525BFF8D000C6C704 /* TrackingListTableViewCell.swift */,
+				E068477625BFF8D000C6C704 /* TrackingListTableViewCell.xib */,
+			);
+			path = TrackingListTableViewCell;
+			sourceTree = "<group>";
+		};
+		E0E44B5C25BFF73A004D561F /* WillReleaseCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E068479125C009E500C6C704 /* WillReleaseCollectionViewCell.swift */,
+				E068479225C009E500C6C704 /* WillReleaseCollectionViewCell.xib */,
+			);
+			path = WillReleaseCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E0E44B5D25BFF752004D561F /* SettingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E068478525C0030D00C6C704 /* SettingViewSectionHeader.swift */,
+				E068478825C0032600C6C704 /* SettingViewSectionHeader.xib */,
+				E068478B25C006C800C6C704 /* SettingViewSwitchCell.swift */,
+				E068478C25C006C800C6C704 /* SettingViewSwitchCell.xib */,
+			);
+			path = SettingTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +259,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E068478E25C006C800C6C704 /* SettingViewSwitchCell.xib in Resources */,
+				E068478925C0032600C6C704 /* SettingViewSectionHeader.xib in Resources */,
+				E068477825BFF8D000C6C704 /* TrackingListTableViewCell.xib in Resources */,
 				E0DF08F025B7F5830049A65F /* LaunchScreen.storyboard in Resources */,
+				E068477D25BFFD0C00C6C704 /* PromotionTableViewCell.xib in Resources */,
 				E0DF08ED25B7F5830049A65F /* Assets.xcassets in Resources */,
+				E068479425C009E500C6C704 /* WillReleaseCollectionViewCell.xib in Resources */,
 				E0DF08EB25B7F5820049A65F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,12 +320,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E088521025BECD2800783CDA /* GameModel.swift in Sources */,
+				E068478D25C006C800C6C704 /* SettingViewSwitchCell.swift in Sources */,
+				E068477725BFF8D000C6C704 /* TrackingListTableViewCell.swift in Sources */,
 				E0E44B5425BEED86004D561F /* SearchViewController.swift in Sources */,
 				E0E44B5725BEED95004D561F /* TrackingListViewController.swift in Sources */,
 				E0E44B4E25BEED68004D561F /* PromotionViewController.swift in Sources */,
+				E068478625C0030D00C6C704 /* SettingViewSectionHeader.swift in Sources */,
+				E068479325C009E500C6C704 /* WillReleaseCollectionViewCell.swift in Sources */,
 				E0DF08E425B7F5820049A65F /* AppDelegate.swift in Sources */,
 				E0E44B4B25BEED58004D561F /* WillReleaseViewController.swift in Sources */,
 				E0DF08E625B7F5820049A65F /* SceneDelegate.swift in Sources */,
+				E068477C25BFFD0C00C6C704 /* PromotionTableViewCell.swift in Sources */,
 				E0E44B5125BEED74004D561F /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

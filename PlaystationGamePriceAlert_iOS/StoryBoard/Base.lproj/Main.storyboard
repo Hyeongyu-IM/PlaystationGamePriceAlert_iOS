@@ -5,88 +5,271 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Setting View Controller-->
         <scene sceneID="euZ-6K-dm1">
             <objects>
-                <viewController id="dhb-IW-hpz" sceneMemberID="viewController">
+                <viewController id="dhb-IW-hpz" customClass="SettingViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDz-3H-Jnd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejy-L4-JFK">
+                                <rect key="frame" x="20" y="74" width="127.5" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pJY-Dg-drB">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="u1E-4Q-opl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u1E-4Q-opl" firstAttribute="bottom" secondItem="pJY-Dg-drB" secondAttribute="bottom" id="0pg-mP-lCa"/>
+                            <constraint firstItem="pJY-Dg-drB" firstAttribute="trailing" secondItem="u1E-4Q-opl" secondAttribute="trailing" id="227-c4-RYX"/>
+                            <constraint firstItem="Ejy-L4-JFK" firstAttribute="top" secondItem="u1E-4Q-opl" secondAttribute="top" constant="30" id="KVY-NY-IsL"/>
+                            <constraint firstItem="pJY-Dg-drB" firstAttribute="top" secondItem="Ejy-L4-JFK" secondAttribute="bottom" constant="15" id="hVM-Ut-ppG"/>
+                            <constraint firstItem="pJY-Dg-drB" firstAttribute="leading" secondItem="u1E-4Q-opl" secondAttribute="leading" id="nfi-Il-1xl"/>
+                            <constraint firstItem="Ejy-L4-JFK" firstAttribute="leading" secondItem="LDz-3H-Jnd" secondAttribute="leading" constant="20" id="yxb-1l-ndn"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="aHE-fu-LOz"/>
+                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="aHE-fu-LOz"/>
+                    <connections>
+                        <outlet property="settingTableView" destination="pJY-Dg-drB" id="3zU-ZY-RjC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Or-K2-Nz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="-72"/>
+            <point key="canvasLocation" x="1382.608695652174" y="-72.321428571428569"/>
         </scene>
-        <!--Item 1-->
+        <!--Search View Controller-->
         <scene sceneID="Bol-kX-RMn">
             <objects>
-                <viewController id="PCE-et-tBv" sceneMemberID="viewController">
+                <viewController id="PCE-et-tBv" customClass="SearchViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d8a-Gd-zRp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oio-zb-gzS">
+                                <rect key="frame" x="20" y="74" width="239" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="게임이름을 입력해 주세요" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EGo-pa-SMW">
+                                <rect key="frame" x="0.0" y="156.5" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nM6-Lq-wld">
+                                <rect key="frame" x="0.0" y="226" width="414" height="576"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" textLabel="wa3-mp-yvV" style="IBUITableViewCellStyleDefault" id="se1-Dh-mEg">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="se1-Dh-mEg" id="F2v-20-BBs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wa3-mp-yvV">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2XN-Ir-cYq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oio-zb-gzS" firstAttribute="top" secondItem="2XN-Ir-cYq" secondAttribute="top" constant="30" id="B8O-Ud-ykj"/>
+                            <constraint firstItem="EGo-pa-SMW" firstAttribute="top" secondItem="oio-zb-gzS" secondAttribute="bottom" constant="27.5" id="ILL-g4-LDg"/>
+                            <constraint firstItem="nM6-Lq-wld" firstAttribute="leading" secondItem="2XN-Ir-cYq" secondAttribute="leading" id="MF4-bM-e0h"/>
+                            <constraint firstItem="nM6-Lq-wld" firstAttribute="top" secondItem="EGo-pa-SMW" secondAttribute="bottom" id="OlX-x5-T1v"/>
+                            <constraint firstItem="EGo-pa-SMW" firstAttribute="leading" secondItem="2XN-Ir-cYq" secondAttribute="leading" id="ReH-Ry-AkB"/>
+                            <constraint firstItem="2XN-Ir-cYq" firstAttribute="bottom" secondItem="nM6-Lq-wld" secondAttribute="bottom" id="SyC-fU-W2P"/>
+                            <constraint firstItem="nM6-Lq-wld" firstAttribute="trailing" secondItem="2XN-Ir-cYq" secondAttribute="trailing" id="aJl-l5-NE3"/>
+                            <constraint firstItem="EGo-pa-SMW" firstAttribute="trailing" secondItem="2XN-Ir-cYq" secondAttribute="trailing" id="geo-my-CPK"/>
+                            <constraint firstItem="oio-zb-gzS" firstAttribute="leading" secondItem="d8a-Gd-zRp" secondAttribute="leading" constant="20" id="pbx-9v-dfh"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="GEf-40-hKc"/>
+                    <tabBarItem key="tabBarItem" image="new" id="GEf-40-hKc"/>
+                    <connections>
+                        <outlet property="searchTableView" destination="nM6-Lq-wld" id="UVX-DJ-9bJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cm-nZ-tUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-601" y="-71"/>
+            <point key="canvasLocation" x="-601.44927536231887" y="-71.651785714285708"/>
         </scene>
-        <!--Item-->
+        <!--Will Release View Controller-->
         <scene sceneID="iaq-DU-wwU">
             <objects>
-                <viewController id="3xZ-YY-pgx" sceneMemberID="viewController">
+                <viewController id="3xZ-YY-pgx" customClass="WillReleaseViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYc-RB-x9B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dao-oS-DAa">
+                                <rect key="frame" x="20" y="74" width="269" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5u0-qy-L9a">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZXc-IU-GmM">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bhf-fM-oZz">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="q0d-AP-Khm">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="72g-fo-y7g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dao-oS-DAa" firstAttribute="top" secondItem="72g-fo-y7g" secondAttribute="top" constant="30" id="0VT-KB-6YQ"/>
+                            <constraint firstItem="dao-oS-DAa" firstAttribute="leading" secondItem="72g-fo-y7g" secondAttribute="leading" constant="20" id="7Mr-CT-U49"/>
+                            <constraint firstItem="5u0-qy-L9a" firstAttribute="trailing" secondItem="72g-fo-y7g" secondAttribute="trailing" id="E0E-pY-6wK"/>
+                            <constraint firstItem="5u0-qy-L9a" firstAttribute="leading" secondItem="72g-fo-y7g" secondAttribute="leading" id="M85-A2-z6c"/>
+                            <constraint firstItem="5u0-qy-L9a" firstAttribute="bottom" secondItem="72g-fo-y7g" secondAttribute="bottom" id="sPZ-3p-MsA"/>
+                            <constraint firstItem="5u0-qy-L9a" firstAttribute="top" secondItem="dao-oS-DAa" secondAttribute="bottom" constant="15" id="sUd-oa-C6F"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="IQq-6U-4XO"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="IQq-6U-4XO"/>
+                    <connections>
+                        <outlet property="willReleaseCollectionView" destination="5u0-qy-L9a" id="oud-50-riN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04Q-wR-lhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2581" y="-72"/>
+            <point key="canvasLocation" x="-2581.1594202898555" y="-72.321428571428569"/>
         </scene>
-        <!--Item-->
+        <!--Tracking List View Controller-->
         <scene sceneID="4eU-wj-sxB">
             <objects>
-                <viewController id="1wT-qF-cK6" sceneMemberID="viewController">
+                <viewController id="1wT-qF-cK6" customClass="TrackingListViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="onj-ZM-u8t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV4-yZ-Jgf">
+                                <rect key="frame" x="20" y="74" width="219.5" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1b7-Iu-XWh">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aHv-bC-D5N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HV4-yZ-Jgf" firstAttribute="leading" secondItem="aHv-bC-D5N" secondAttribute="leading" constant="20" id="2u6-Ox-N7T"/>
+                            <constraint firstItem="HV4-yZ-Jgf" firstAttribute="top" secondItem="aHv-bC-D5N" secondAttribute="top" constant="30" id="KOk-Sg-TtJ"/>
+                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="trailing" secondItem="aHv-bC-D5N" secondAttribute="trailing" id="L67-Qk-E5l"/>
+                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="bottom" secondItem="aHv-bC-D5N" secondAttribute="bottom" id="RBA-dM-hX4"/>
+                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="leading" secondItem="aHv-bC-D5N" secondAttribute="leading" id="S3a-Vi-xmU"/>
+                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="top" secondItem="HV4-yZ-Jgf" secondAttribute="bottom" constant="15" id="vvi-Lm-F7s"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Xnl-oQ-zl6"/>
+                    <tabBarItem key="tabBarItem" title="" image="star" catalog="system" id="Xnl-oQ-zl6"/>
+                    <connections>
+                        <outlet property="trackingTableView" destination="1b7-Iu-XWh" id="ag5-Xa-CEv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38I-17-R07" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1606" y="-72"/>
+            <point key="canvasLocation" x="-1607.2463768115942" y="-72.321428571428569"/>
         </scene>
-        <!--Item-->
+        <!--Promotion View Controller-->
         <scene sceneID="IAu-Fu-54p">
             <objects>
-                <viewController id="nry-Ky-tGY" sceneMemberID="viewController">
+                <viewController id="nry-Ky-tGY" customClass="PromotionViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcz-Hn-nN5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotion Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1v-q6-kMI">
+                                <rect key="frame" x="20" y="74" width="322.5" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021년 2월 3일에 프로모션 종료" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAD-Xc-pr8">
+                                <rect key="frame" x="20" y="139" width="374" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACt-TX-pkA">
+                                <rect key="frame" x="0.0" y="170.5" width="414" height="642.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mLa-hf-dIB">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bGj-G5-old">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="O1Z-fF-sjb">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IWK-Me-F5k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b1v-q6-kMI" firstAttribute="leading" secondItem="IWK-Me-F5k" secondAttribute="leading" constant="20" id="1TS-P2-IjO"/>
+                            <constraint firstItem="ACt-TX-pkA" firstAttribute="bottom" secondItem="IWK-Me-F5k" secondAttribute="bottom" id="O59-Ox-eEk"/>
+                            <constraint firstItem="b1v-q6-kMI" firstAttribute="top" secondItem="IWK-Me-F5k" secondAttribute="top" constant="30" id="PHF-Ox-z5F"/>
+                            <constraint firstItem="IWK-Me-F5k" firstAttribute="trailing" secondItem="kAD-Xc-pr8" secondAttribute="trailing" constant="20" id="ThG-2g-BxM"/>
+                            <constraint firstItem="ACt-TX-pkA" firstAttribute="leading" secondItem="IWK-Me-F5k" secondAttribute="leading" id="WZY-xk-q96"/>
+                            <constraint firstItem="ACt-TX-pkA" firstAttribute="trailing" secondItem="IWK-Me-F5k" secondAttribute="trailing" id="Y4V-RM-ZnA"/>
+                            <constraint firstItem="kAD-Xc-pr8" firstAttribute="leading" secondItem="IWK-Me-F5k" secondAttribute="leading" constant="20" id="aCp-9G-2Nm"/>
+                            <constraint firstItem="kAD-Xc-pr8" firstAttribute="centerX" secondItem="jcz-Hn-nN5" secondAttribute="centerX" id="aKO-iB-AAi"/>
+                            <constraint firstItem="ACt-TX-pkA" firstAttribute="top" secondItem="kAD-Xc-pr8" secondAttribute="bottom" constant="7.5" id="c01-Cu-hdn"/>
+                            <constraint firstItem="kAD-Xc-pr8" firstAttribute="top" secondItem="b1v-q6-kMI" secondAttribute="bottom" constant="10" id="wao-nb-zvl"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="FvQ-uP-GkO"/>
+                    <tabBarItem key="tabBarItem" title="" image="gamecontroller" catalog="system" id="FvQ-uP-GkO"/>
+                    <connections>
+                        <outlet property="promotionColletionView" destination="ACt-TX-pkA" id="ZKu-Hc-Of4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN7-cU-8WM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428" y="-72"/>
+            <point key="canvasLocation" x="427.536231884058" y="-72.321428571428569"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="otE-wa-BuU">
@@ -111,6 +294,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="new" width="53" height="30"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

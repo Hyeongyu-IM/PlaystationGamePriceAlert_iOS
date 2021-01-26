@@ -7,8 +7,9 @@
 
 import UIKit
 
-class PromotionViewController: UIViewController {
+class SettingViewController: UIViewController {
     
+    @IBOutlet weak var settingTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
