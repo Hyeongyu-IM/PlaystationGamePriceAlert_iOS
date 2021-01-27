@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31773B1341510F5C7E62A33E /* Pods_PlaystationGamePriceAlert_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */; };
+		E053E0A925C14DC500CED340 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053E0A825C14DC500CED340 /* ColorResource.swift */; };
 		E068477725BFF8D000C6C704 /* TrackingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068477525BFF8D000C6C704 /* TrackingListTableViewCell.swift */; };
 		E068477825BFF8D000C6C704 /* TrackingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E068477625BFF8D000C6C704 /* TrackingListTableViewCell.xib */; };
 		E068477C25BFFD0C00C6C704 /* PromotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068477A25BFFD0C00C6C704 /* PromotionTableViewCell.swift */; };
@@ -19,6 +20,7 @@
 		E068479325C009E500C6C704 /* WillReleaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068479125C009E500C6C704 /* WillReleaseCollectionViewCell.swift */; };
 		E068479425C009E500C6C704 /* WillReleaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E068479225C009E500C6C704 /* WillReleaseCollectionViewCell.xib */; };
 		E088521025BECD2800783CDA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E088520F25BECD2800783CDA /* GameModel.swift */; };
+		E099BC6B25C15252005C8B2B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E099BC6A25C15252005C8B2B /* MainTabBarController.swift */; };
 		E0DF08E425B7F5820049A65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E325B7F5820049A65F /* AppDelegate.swift */; };
 		E0DF08E625B7F5820049A65F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF08E525B7F5820049A65F /* SceneDelegate.swift */; };
 		E0DF08EB25B7F5820049A65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF08E925B7F5820049A65F /* Main.storyboard */; };
@@ -34,6 +36,7 @@
 /* Begin PBXFileReference section */
 		781A0C9314ECE690BDA2FBBD /* Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; path = "Target Support Files/Pods-PlaystationGamePriceAlert_iOS/Pods-PlaystationGamePriceAlert_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		89FDFE6BBF86ACB816E71E2E /* Pods_PlaystationGamePriceAlert_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaystationGamePriceAlert_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E053E0A825C14DC500CED340 /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
 		E068477525BFF8D000C6C704 /* TrackingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListTableViewCell.swift; sourceTree = "<group>"; };
 		E068477625BFF8D000C6C704 /* TrackingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackingListTableViewCell.xib; sourceTree = "<group>"; };
 		E068477A25BFFD0C00C6C704 /* PromotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionTableViewCell.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		E068479125C009E500C6C704 /* WillReleaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillReleaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E068479225C009E500C6C704 /* WillReleaseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WillReleaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		E088520F25BECD2800783CDA /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		E099BC6A25C15252005C8B2B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E0DF08E025B7F5820049A65F /* PlaystationGamePriceAlert_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaystationGamePriceAlert_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF08E325B7F5820049A65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DF08E525B7F5820049A65F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,14 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
+		E053E0A725C14DAC00CED340 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				E053E0A825C14DC500CED340 /* ColorResource.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		E068479025C0092500C6C704 /* PromotionTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E0DF08E225B7F5820049A65F /* PlaystationGamePriceAlert_iOS */,
+				E053E0A725C14DAC00CED340 /* Color */,
 				E0DF08E125B7F5820049A65F /* Products */,
 				C6FE1218A7AEC241E673062D /* Pods */,
 				AEC7FF48BE45FE6B0FB996BE /* Frameworks */,
@@ -150,6 +163,7 @@
 		E0E44B4725BEEC02004D561F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E099BC6A25C15252005C8B2B /* MainTabBarController.swift */,
 				E0E44B4A25BEED58004D561F /* WillReleaseViewController.swift */,
 				E0E44B4D25BEED68004D561F /* PromotionViewController.swift */,
 				E0E44B5025BEED74004D561F /* SettingViewController.swift */,
@@ -321,7 +335,9 @@
 			files = (
 				E088521025BECD2800783CDA /* GameModel.swift in Sources */,
 				E068478D25C006C800C6C704 /* SettingViewSwitchCell.swift in Sources */,
+				E099BC6B25C15252005C8B2B /* MainTabBarController.swift in Sources */,
 				E068477725BFF8D000C6C704 /* TrackingListTableViewCell.swift in Sources */,
+				E053E0A925C14DC500CED340 /* ColorResource.swift in Sources */,
 				E0E44B5425BEED86004D561F /* SearchViewController.swift in Sources */,
 				E0E44B5725BEED95004D561F /* TrackingListViewController.swift in Sources */,
 				E0E44B4E25BEED68004D561F /* PromotionViewController.swift in Sources */,

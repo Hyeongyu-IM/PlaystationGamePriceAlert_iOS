@@ -7,4 +7,5 @@ target 'PlaystationGamePriceAlert_iOS' do
 	
   # Pods for PlaystationGamePriceAlert_iOS
 	pod 'SwiftSoup'
+	pod 'EMTNeumorphicView'
 end

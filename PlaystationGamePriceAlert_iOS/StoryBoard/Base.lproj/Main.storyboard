@@ -9,12 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Setting View Controller-->
+        <!--Setting-->
         <scene sceneID="euZ-6K-dm1">
             <objects>
                 <viewController id="dhb-IW-hpz" customClass="SettingViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDz-3H-Jnd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejy-L4-JFK">
@@ -38,7 +38,7 @@
                             <constraint firstItem="Ejy-L4-JFK" firstAttribute="leading" secondItem="LDz-3H-Jnd" secondAttribute="leading" constant="20" id="yxb-1l-ndn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="aHE-fu-LOz"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gear" catalog="system" id="aHE-fu-LOz"/>
                     <connections>
                         <outlet property="settingTableView" destination="pJY-Dg-drB" id="3zU-ZY-RjC"/>
                     </connections>
@@ -47,12 +47,12 @@
             </objects>
             <point key="canvasLocation" x="1382.608695652174" y="-72.321428571428569"/>
         </scene>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="Bol-kX-RMn">
             <objects>
                 <viewController id="PCE-et-tBv" customClass="SearchViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d8a-Gd-zRp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oio-zb-gzS">
@@ -106,25 +106,25 @@
                             <constraint firstItem="oio-zb-gzS" firstAttribute="leading" secondItem="d8a-Gd-zRp" secondAttribute="leading" constant="20" id="pbx-9v-dfh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" image="new" id="GEf-40-hKc"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="SearchBtn" id="GEf-40-hKc"/>
                     <connections>
                         <outlet property="searchTableView" destination="nM6-Lq-wld" id="UVX-DJ-9bJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cm-nZ-tUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-601.44927536231887" y="-71.651785714285708"/>
+            <point key="canvasLocation" x="-526" y="-72"/>
         </scene>
-        <!--Will Release View Controller-->
+        <!--Coming-->
         <scene sceneID="iaq-DU-wwU">
             <objects>
                 <viewController id="3xZ-YY-pgx" customClass="WillReleaseViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYc-RB-x9B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dao-oS-DAa">
-                                <rect key="frame" x="20" y="74" width="269" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dao-oS-DAa">
+                                <rect key="frame" x="20" y="74" width="245.5" height="55"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -150,7 +150,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="72g-fo-y7g"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dao-oS-DAa" firstAttribute="top" secondItem="72g-fo-y7g" secondAttribute="top" constant="30" id="0VT-KB-6YQ"/>
                             <constraint firstItem="dao-oS-DAa" firstAttribute="leading" secondItem="72g-fo-y7g" secondAttribute="leading" constant="20" id="7Mr-CT-U49"/>
@@ -160,21 +160,21 @@
                             <constraint firstItem="5u0-qy-L9a" firstAttribute="top" secondItem="dao-oS-DAa" secondAttribute="bottom" constant="15" id="sUd-oa-C6F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="IQq-6U-4XO"/>
+                    <tabBarItem key="tabBarItem" title="Coming" image="house" catalog="system" id="IQq-6U-4XO"/>
                     <connections>
                         <outlet property="willReleaseCollectionView" destination="5u0-qy-L9a" id="oud-50-riN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04Q-wR-lhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2581.1594202898555" y="-72.321428571428569"/>
+            <point key="canvasLocation" x="-2417" y="-72"/>
         </scene>
-        <!--Tracking List View Controller-->
+        <!--Favorite-->
         <scene sceneID="4eU-wj-sxB">
             <objects>
                 <viewController id="1wT-qF-cK6" customClass="TrackingListViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="onj-ZM-u8t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV4-yZ-Jgf">
@@ -182,9 +182,9 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1b7-Iu-XWh">
-                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1b7-Iu-XWh">
+                                <rect key="frame" x="16" y="144" width="382" height="669"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aHv-bC-D5N"/>
@@ -192,27 +192,27 @@
                         <constraints>
                             <constraint firstItem="HV4-yZ-Jgf" firstAttribute="leading" secondItem="aHv-bC-D5N" secondAttribute="leading" constant="20" id="2u6-Ox-N7T"/>
                             <constraint firstItem="HV4-yZ-Jgf" firstAttribute="top" secondItem="aHv-bC-D5N" secondAttribute="top" constant="30" id="KOk-Sg-TtJ"/>
-                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="trailing" secondItem="aHv-bC-D5N" secondAttribute="trailing" id="L67-Qk-E5l"/>
+                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="trailing" secondItem="aHv-bC-D5N" secondAttribute="trailing" constant="-16" id="L67-Qk-E5l"/>
                             <constraint firstItem="1b7-Iu-XWh" firstAttribute="bottom" secondItem="aHv-bC-D5N" secondAttribute="bottom" id="RBA-dM-hX4"/>
-                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="leading" secondItem="aHv-bC-D5N" secondAttribute="leading" id="S3a-Vi-xmU"/>
+                            <constraint firstItem="1b7-Iu-XWh" firstAttribute="leading" secondItem="aHv-bC-D5N" secondAttribute="leading" constant="16" id="S3a-Vi-xmU"/>
                             <constraint firstItem="1b7-Iu-XWh" firstAttribute="top" secondItem="HV4-yZ-Jgf" secondAttribute="bottom" constant="15" id="vvi-Lm-F7s"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="star" catalog="system" id="Xnl-oQ-zl6"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="star" catalog="system" id="Xnl-oQ-zl6"/>
                     <connections>
                         <outlet property="trackingTableView" destination="1b7-Iu-XWh" id="ag5-Xa-CEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38I-17-R07" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1607.2463768115942" y="-72.321428571428569"/>
+            <point key="canvasLocation" x="-1513" y="-72"/>
         </scene>
-        <!--Promotion View Controller-->
+        <!--Promotion-->
         <scene sceneID="IAu-Fu-54p">
             <objects>
                 <viewController id="nry-Ky-tGY" customClass="PromotionViewController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcz-Hn-nN5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotion Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1v-q6-kMI">
@@ -262,7 +262,7 @@
                             <constraint firstItem="kAD-Xc-pr8" firstAttribute="top" secondItem="b1v-q6-kMI" secondAttribute="bottom" constant="10" id="wao-nb-zvl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="gamecontroller" catalog="system" id="FvQ-uP-GkO"/>
+                    <tabBarItem key="tabBarItem" title="Promotion" image="gamecontroller" catalog="system" id="FvQ-uP-GkO"/>
                     <connections>
                         <outlet property="promotionColletionView" destination="ACt-TX-pkA" id="ZKu-Hc-Of4"/>
                     </connections>
@@ -271,21 +271,22 @@
             </objects>
             <point key="canvasLocation" x="427.536231884058" y="-72.321428571428569"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="otE-wa-BuU">
             <objects>
-                <tabBarController id="JZo-t4-L5H" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4ee-TG-6eh">
+                <tabBarController id="JZo-t4-L5H" customClass="MainTabBarController" customModule="PlaystationGamePriceAlert_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="4ee-TG-6eh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="PCE-et-tBv" kind="relationship" relationship="viewControllers" id="I7e-xT-P8j"/>
-                        <segue destination="dhb-IW-hpz" kind="relationship" relationship="viewControllers" id="vVA-wt-3mb"/>
-                        <segue destination="nry-Ky-tGY" kind="relationship" relationship="viewControllers" id="eBL-X0-tST"/>
-                        <segue destination="1wT-qF-cK6" kind="relationship" relationship="viewControllers" id="DPd-3L-AwQ"/>
-                        <segue destination="3xZ-YY-pgx" kind="relationship" relationship="viewControllers" id="u87-tF-NYD"/>
+                        <outlet property="bottomTabBar" destination="4ee-TG-6eh" id="Rgg-iN-KTd"/>
+                        <segue destination="3xZ-YY-pgx" kind="relationship" relationship="viewControllers" id="pkK-3S-vvK"/>
+                        <segue destination="1wT-qF-cK6" kind="relationship" relationship="viewControllers" id="CJI-5b-rgF"/>
+                        <segue destination="PCE-et-tBv" kind="relationship" relationship="viewControllers" id="UMF-Uc-IFa"/>
+                        <segue destination="nry-Ky-tGY" kind="relationship" relationship="viewControllers" id="xCY-6t-JY8"/>
+                        <segue destination="dhb-IW-hpz" kind="relationship" relationship="viewControllers" id="zIB-Hz-krb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8G-r1-5AD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -294,10 +295,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SearchBtn" width="44" height="25"/>
         <image name="gamecontroller" catalog="system" width="128" height="80"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house" catalog="system" width="128" height="106"/>
-        <image name="new" width="53" height="30"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

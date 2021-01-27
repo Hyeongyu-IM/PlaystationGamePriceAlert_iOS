@@ -13,5 +13,30 @@ class WillReleaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        basicConfig()
     }
+    
+    private func basicConfig() {
+        self.view.backgroundColor = ColorResource.backgruondColor
+        self.willReleaseCollectionView.backgroundColor = ColorResource.backgruondColor
+        willReleaseCollectionView.delegate = self
+    }
+}
+
+extension WillReleaseViewController: UICollectionViewDelegate {
+    
+}
+
+extension WillReleaseViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+}
+
+extension WillReleaseViewController: UICollectionViewDelegateFlowLayout {
+    
 }

@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import EMTNeumorphicView
 
 class TrackingListTableViewCell: UITableViewCell {
+    
+    static let registerID = "\(TrackingListTableViewCell.self)"
     
     @IBOutlet weak var trackingImage: UIImageView!
     @IBOutlet weak var trackingProducerLabel: UILabel!
@@ -15,16 +18,20 @@ class TrackingListTableViewCell: UITableViewCell {
     @IBOutlet weak var trackingReleaseDateLabel: UILabel!
     @IBOutlet weak var trackingPriceLabel: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
+    
+    var baseView: EMTNeumorphicView = {
+        let view = EMTNeumorphicView()
+        view.neumorphicLayer?.cornerRadius = 20
+        view.neumorphicLayer?.elementDepth = 3
+        return view
+    }()
+    
     
 }
