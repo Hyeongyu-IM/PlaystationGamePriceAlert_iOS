@@ -10,3 +10,4 @@
 - Background Session
 - Neumorphism : https://dev.to/yuno_miyako/building-neumorphism-ios-app-2h15
 - Launch Screen Animation in App
+- 중간 면접준비...
